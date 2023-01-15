@@ -1,6 +1,15 @@
 # 1 "displayA0.s"
 # 1 "<built-in>" 1
 # 1 "displayA0.s" 2
+;--------------------------------------------------------------
+; @file P2-Display_7SEG
+; @brief Segunda practica
+; @date 14/01/23
+; @author Sebastián Antonio Arca Vértiz
+; @frecuency 4 Mhz
+; @version MPLAB X IDE v6.00
+;------------------------------------------------------------------
+
 # 1 "./config.inc" 1
 
 ; PIC18F57Q84 Configuration Bit Settings
@@ -146,7 +155,7 @@
 
 ; CONFIG35
   CONFIG CRCERESL = hFF ; Non-Boot Sector Expected Result for CRC on boot bits 7-0 (Bits 7:0 of CRCERES are 0xFF)
-# 2 "displayA0.s" 2
+# 10 "displayA0.s" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\xc.inc" 1 3
 
 
@@ -47481,7 +47490,7 @@ stk_offset SET 0
 auto_size SET 0
 ENDM
 # 5 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\xc.inc" 2 3
-# 3 "displayA0.s" 2
+# 11 "displayA0.s" 2
 # 1 "./Retardos.inc" 1
 ;--------------------------------------------------------------
 ; @file Retardos.inc
@@ -47716,7 +47725,7 @@ Loop_500us:
     DECFSZ contador2,1,0 ;252 tcy (proviene de (k2-1)+3tcy, hablando del k del contador 2)
     GOTO Ext_Loop_250ms ;498 tcy (si es que llega aquí usaríamos (k2-1)*2 tyc)
     RETURN ;2tcy
-# 4 "displayA0.s" 2
+# 12 "displayA0.s" 2
 
 
 PSECT resetVect,class=CODE,reloc=2
