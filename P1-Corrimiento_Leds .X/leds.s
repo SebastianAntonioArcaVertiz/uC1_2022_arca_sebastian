@@ -1,3 +1,11 @@
+;--------------------------------------------------------------
+; @file P1-Corrimiento_Leds
+; @brief Primera practica
+; @date 14/01/23
+; @author Sebastián Antonio Arca Vértiz
+; @frecuency 4 Mhz
+; @version MPLAB X IDE v6.00
+;------------------------------------------------------------------
 PROCESSOR 18F57Q84
 #include "config.inc" /config statements should precede project file includes./
 #include <xc.inc>

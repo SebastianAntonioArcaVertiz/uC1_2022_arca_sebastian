@@ -1,6 +1,14 @@
 # 1 "leds.s"
 # 1 "<built-in>" 1
 # 1 "leds.s" 2
+;--------------------------------------------------------------
+; @file P1-Corrimiento_Leds
+; @brief Primera practica
+; @date 14/01/23
+; @author Sebastián Antonio Arca Vértiz
+; @frecuency 4 Mhz
+; @version MPLAB X IDE v6.00
+;------------------------------------------------------------------
 PROCESSOR 18F57Q84
 
 # 1 "./config.inc" 1
@@ -148,7 +156,7 @@ PROCESSOR 18F57Q84
 
 ; CONFIG35
   CONFIG CRCERESL = hFF ; Non-Boot Sector Expected Result for CRC on boot bits 7-0 (Bits 7:0 of CRCERES are 0xFF)
-# 3 "leds.s" 2
+# 11 "leds.s" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\xc.inc" 1 3
 
 
@@ -47483,7 +47491,7 @@ stk_offset SET 0
 auto_size SET 0
 ENDM
 # 5 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\xc.inc" 2 3
-# 4 "leds.s" 2
+# 12 "leds.s" 2
 # 1 "./Retardos.inc" 1
 ;--------------------------------------------------------------
 ; @file Retardos.inc
@@ -47718,7 +47726,7 @@ Loop_500us:
     DECFSZ contador2,1,0 ;252 tcy (proviene de (k2-1)+3tcy, hablando del k del contador 2)
     GOTO Ext_Loop_250ms ;498 tcy (si es que llega aquí usaríamos (k2-1)*2 tyc)
     RETURN ;2tcy
-# 5 "leds.s" 2
+# 13 "leds.s" 2
 
 
 PSECT resetVect,class=CODE,reloc=2
@@ -47966,5 +47974,5 @@ Config_OSC:
     CLRF PORTC,0
     CLRF ANSELC,0
     RETURN
-# 260 "leds.s"
+# 268 "leds.s"
 END resetVect
